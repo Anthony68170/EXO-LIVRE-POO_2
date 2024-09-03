@@ -14,6 +14,7 @@ class Livre{
         $this->_nbpages = $nbpages;
         $this->_anparution = $anparution;
         $this->_prix = $prix;
+        $this->_auteur = $auteur;
     }
     
   public function getTitre(){
@@ -42,7 +43,10 @@ class Livre{
   public function setPrix(){
     return $this->_prix;
   }
+  public function setAuteur(){
+    return $this->_auteur;
+  }
 }
 
-$poste = new Livre ("ConnectVet", "Série 1", "photoplethysmography", 94);
+$poste = new Livre ("Ca", 1138,  1983, 20);
 echo $poste->getTitre();
