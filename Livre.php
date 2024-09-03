@@ -31,22 +31,26 @@ class Livre{
   }
 
 
-  public function setTitre(){
+  public function setTitre($titre){
     return $this->_titre; 
   }
-  public function setNbpages(){
+  public function setNbpages($nbpages){
     return $this->_nbpages;
   }
-  public function setAnparution(){
+  public function setAnparution($anparution){
     return $this->_anparution;
   }
-  public function setPrix(){
+  public function setPrix($prix){
     return $this->_prix;
   }
-  public function setAuteur(){
+  public function setAuteur($auteur){
     return $this->_auteur;
   }
 }
 
-$poste = new Livre ("Ca", 1138,  1983, 20);
-echo $poste->getTitre();
+$livre= new Livre("Ca" . )
+// public function __toString(){
+//   return $this->_titre . " " . $this->_anparution . " "
+}
+// $poste = new Livre ("Ca", 1138,  1983, 20);
+// echo $poste->getTitre();
