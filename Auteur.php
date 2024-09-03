@@ -1,8 +1,8 @@
 <?php
 
 class Auteur{
-    private $_prenom;
-    private $_nom;
+    private string $_prenom;
+    private string $_nom;
 
 
     public function __construct($prenom, $nom,){
@@ -14,10 +14,10 @@ class Auteur{
         return $this->_prenom;
       }
       public function getnom(){
-        return $this->_prenom;
+        return $this->_nom;
       }
-      public function toString(){
-        return $this->_prenom . 
+      public function __toString(){
+        return $this->_prenom ;
         }
       }
-}
+ 

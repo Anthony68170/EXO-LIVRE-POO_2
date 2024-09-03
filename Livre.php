@@ -3,16 +3,16 @@
 
 class Livre{
     private $_titre;
-    private $_nbpages;
-    private $_anparution;
+    private $_nbPages;
+    private $_anParution;
     private $_prix;
     private $_auteur;
     
     
     public function __construct($titre, $nbpages, $anparution, $prix, $auteur,) {
         $this->_titre = $titre;
-        $this->_nbpages = $nbpages;
-        $this->_anparution = $anparution;
+        $this->_nbPages = $nbpages;
+        $this->_anParution = $anparution;
         $this->_prix = $prix;
         $this->_auteur = $auteur;
     }
@@ -21,10 +21,10 @@ class Livre{
     return $this->_titre;
   }
   public function getNbpages(){
-    return $this->_nbpages;
+    return $this->_nbPages;
   }
   public function getAnparution(){
-    return $this->_anparution;
+    return $this->_anParution;
   }
   public function getPrix(){
     return $this->_prix;
@@ -35,10 +35,10 @@ class Livre{
     return $this->_titre = $titre; 
   }
   public function setNbpages($nbpages){
-    return $this->_nbpages = $nbpages;
+    return $this->_nbPages = $nbpages;
   }
   public function setAnparution($anparution){
-    return $this->_anparution = $anparution;
+    return $this->_anParution = $anparution;
   }
   public function setPrix($prix){
     return $this->_prix = $prix;
@@ -48,9 +48,13 @@ class Livre{
   }
 }
 
-public function newLivre($livre){
-  $this->_livre
-}
+$livreCa = new Livre("Ca", 1138, 1983, 20, "£€", $auteur);
+$livreSi = new Livre("Simetiere", 374, 1983, 15, "€", $auteur);
+
+echo "Bibliographie de " . $auteur . " ";
+
+// var_dump($livre);
+
 // $livre= new Livre("Ca" . )
 // public function __toString(){
 //   return $this->_titre . " " . $this->_anparution . " "
