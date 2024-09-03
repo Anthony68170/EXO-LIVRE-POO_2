@@ -17,6 +17,7 @@ class Auteur{
         return $this->_prenom;
       }
       public function toString(){
-        return $this->_toString;
+        return $this->_prenom . 
+        }
       }
 }
