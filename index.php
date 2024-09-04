@@ -13,4 +13,4 @@ $livre = new Livre("Ca", 1138, 1983, 20, $auteur);
 
 
 var_dump($auteur);
-var_dump($livre1);
+var_dump($livre);

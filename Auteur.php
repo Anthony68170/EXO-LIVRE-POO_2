@@ -1,7 +1,7 @@
 
 <!-- CODE AUTEUR -->
 <?php
-include "Livre.php";
+// include "Livre.php";
 class Auteur{
     private string $_prenom;
     private string $_nom;
