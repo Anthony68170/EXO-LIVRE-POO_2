@@ -9,6 +9,7 @@ class Livre{
     private $_auteur;
     
     
+
     public function __construct($titre, $nbpages, $anparution, $prix, $auteur,) {
         $this->_titre = $titre;
         $this->_nbPages = $nbpages;
@@ -17,6 +18,9 @@ class Livre{
         $this->_auteur = $auteur;
     }
     
+
+// Placer les getters
+
   public function getTitre(){
     return $this->_titre;
   }
@@ -29,8 +33,12 @@ class Livre{
   public function getPrix(){
     return $this->_prix;
   }
+  public function getAuteur(){
+    return $this->_auteur;
+  }
 
 
+// Placer les setters
   public function setTitre($titre){
     return $this->_titre = $titre; 
   }
@@ -47,13 +55,13 @@ class Livre{
     return $this->_auteur = $auteur;
   }
 }
-
-$livreCa = new Livre("Ca", 1138, 1983, 20, "£€", $auteur);
-$livreSi = new Livre("Simetiere", 374, 1983, 15, "€", $auteur);
+$auteur = new Auteur ("Stephen", "King");
+$livreCa = new Livre("Ca", 1138, 1983, 20, $auteur);
+$livreSi = new Livre("Simetiere", 374, 1983, 15, $auteur);
 
 echo "Bibliographie de " . $auteur . " ";
 
-// var_dump($livre);
+var_dump($livre);
 
 // $livre= new Livre("Ca" . )
 // public function __toString(){

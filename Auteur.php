@@ -17,7 +17,7 @@ class Auteur{
         return $this->_nom;
       }
       public function __toString(){
-        return $this->_prenom ;
+        return $this->_prenom . " " . $this->_nom;
         }
       }
  
