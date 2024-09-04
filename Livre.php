@@ -16,6 +16,8 @@ class Livre{
         $this->_anParution = $anparution;
         $this->_prix = $prix;
         $this->_auteur = $auteur;
+        $auteur-> ajouterLivre($this);//AJOUTER(dans function public) LIVRE LIER A AUTEUR
+        // j'ai lié mon (1)LIVRE à un objet (2)AUTEUR à la ligne d'au dessus, cela signifique que je PEUX FAIRE APPEL aux FUNCTION PUBLIQUE de ma classe auteur (ajouterLivre)
     }
     
 
