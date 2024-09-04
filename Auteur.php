@@ -11,14 +11,14 @@ class Auteur{
         $this -> _prenom = $prenom;
         $this -> _nom = $nom;
         
-        $this->_livres = array();// le TABLEAU A INITILALISER VIDE de livres est à la base un tableai vide
+        $this->_livres = array();// le TABLEAU A INITILALISER VIDE de livre est à la base un tableai vide
     }
 
     public function afficherBibliographie(){
-        // tableau de livre dans auteur faire boucle sur le tableau de livre  avec foreach 
-        foreach ($_livres as $key => $value) {
+        // le tableau de livres lié à auteur fait une boucle le tableau de livre avec foreach 
+        foreach ($arrayName = array(); as $key => $value) {
             # code...
-            echo $_livre->_toString();
+            echo $_livre-> ;
         }
     }
     public function ajouterLivre($livre){ //1_DONNER OBJET LIVRE et 2__LIVRE A INJECTER DANS TABLEAU(de l'auteur)
