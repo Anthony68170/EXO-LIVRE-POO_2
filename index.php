@@ -7,14 +7,32 @@
 include "Livre.php";
 include "Auteur.php";
 
+
+
+
 // CREER OBJETS
 
 // auteur
-$auteur = new Auteur("Stephen", "King");
+$auteur1 = new Auteur("Stephen", "King");
+$auteur2 = new Auteur("Stephen", "King");
+$auteur3 = new Auteur("Stephen", "King");
 
 // livre
-$livre = new Livre("Ca", 1138, 1983, 20, $auteur);
+$livre1 = new Livre("Ca", 1138, 1983, 20, $auteur);
+$livre2 = new Livre("Ca", 1138, 1983, 20, $auteur);
+$livre3 = new Livre("Ca", 1138, 1983, 20, $auteur);
+$livre4 = new Livre("Ca", 1138, 1983, 20, $auteur);
+$livre5 = new Livre("Ca", 1138, 1983, 20, $auteur);
 
 
-var_dump($auteur);
-var_dump($livre);
+
+
+echo "Bibliographie de " . $auteur . " ";
+echo $livre -> getAuteur()->getNom();
+
+
+
+
+
+// var_dump($auteur);
+// var_dump($livre);

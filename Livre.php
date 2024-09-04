@@ -55,15 +55,15 @@ class Livre{
     return $this->_auteur = $auteur;
   }
 
-  public function __tostring(){
+  public function __toString(){
     return $this->_titre . " : " . $this->_nbPages . " pages. (" . $this->_anParution . ") " . $this->_prix . "€ ";
   }
 }
-$auteur = new Auteur ("Stephen", "King");
-$livre1 = new Livre("Ca", 1138, 1983, 20, $auteur);
-$livre2 = new Livre("Simetiere", 374, 1983, 15, $auteur);
+// $auteur = new Auteur ("Stephen", "King");
+// $livre1 = new Livre("Ca", 1138, 1983, 20, $auteur);
+// $livre2 = new Livre("Simetiere", 374, 1983, 15, $auteur);
 
-echo "Bibliographie de " . $auteur . " ";
+// echo "Bibliographie de " . $auteur . " ";
 
 // var_dump($auteur);
 
