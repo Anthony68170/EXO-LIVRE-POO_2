@@ -8,7 +8,11 @@ include "Livre.php";
 include "Auteur.php";
 
 // CREER OBJETS
+
+// auteur
 $auteur = new Auteur("Stephen", "King");
+
+// livre
 $livre = new Livre("Ca", 1138, 1983, 20, $auteur);
 
 
