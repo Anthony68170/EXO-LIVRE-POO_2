@@ -1,5 +1,5 @@
+<!-- CODE LIVRE -->
 <?php
-
 
 class Livre{
     private $_titre;
@@ -10,7 +10,7 @@ class Livre{
     
     
 
-    public function __construct($titre, $nbpages, $anparution, $prix, $auteur,) {
+    public function __construct($titre, $nbpages, $anparution, $prix, $auteur,){
         $this->_titre = $titre;
         $this->_nbPages = $nbpages;
         $this->_anParution = $anparution;
@@ -54,14 +54,18 @@ class Livre{
   public function setAuteur($auteur){
     return $this->_auteur = $auteur;
   }
+
+  public function __tostring(){
+    return $this->_titre . " " . $this->_nom;
+  }
 }
 $auteur = new Auteur ("Stephen", "King");
-$livreCa = new Livre("Ca", 1138, 1983, 20, $auteur);
-$livreSi = new Livre("Simetiere", 374, 1983, 15, $auteur);
+$livre1 = new Livre("Ca", 1138, 1983, 20, $auteur);
+$livre2 = new Livre("Simetiere", 374, 1983, 15, $auteur);
 
 echo "Bibliographie de " . $auteur . " ";
 
-var_dump($livre);
+var_dump($auteur);
 
 // $livre= new Livre("Ca" . )
 // public function __toString(){

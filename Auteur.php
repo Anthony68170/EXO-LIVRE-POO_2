@@ -1,5 +1,7 @@
-<?php
 
+<!-- CODE AUTEUR -->
+<?php
+include "Livre.php";
 class Auteur{
     private string $_prenom;
     private string $_nom;
@@ -19,5 +21,8 @@ class Auteur{
       public function __toString(){
         return $this->_prenom . " " . $this->_nom;
         }
+        // public function getauteur(){
+        //     return $this->_auteur;
+        //   }
       }
  
