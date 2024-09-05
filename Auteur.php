@@ -17,16 +17,16 @@ class Auteur{
 
     public function afficherBibliographie(){ //PARCOURIR LES LIVRES DE L'AUTEUR
         // le tableau de livres lié à auteur fait une boucle le tableau de livre avec foreach 
-        echo "Binliographie de " .$this->$auteur;
+        echo "Binliographie de " .$this->$auteur; // Afficher la phrase de présentation de la biblio
         foreach ($this -> _livres as $value) { // Pour parcourir chaque livre du tableau
             # code...
-            echo _livres->__toString($auteur);
+            echo _livres->__toString($auteur); //Afficher le tableau LIVRES de l'AUTEUR
         }
     }
     public function ajouterLivre($livre){ //1_DONNER OBJET LIVRE et 2__LIVRE A INJECTER DANS TABLEAU(de l'auteur)
         // 1_en argument de la fonction on va lui donner un objet Livre
         // 2_puis dans la fonction on va lui dire que l'objet donné onzargument sera injecté dans le tableau de livres de l'auteur
-        $this ->_livres[] = $livre;
+        $this ->_livres[] = $livre; // Appeler le tableau VIDE et le lier à 1 livre
         
     }
     public function getPrenom(){
