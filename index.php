@@ -25,8 +25,8 @@ $livre5 = new Livre("Introduction to Analytical ENgine", 60, 1843, 25, $auteur3)
 $livre6 = new Livre("Voyage dans le Cyberespace", 300, 2022, 22, $auteur3);
 
 
-
-echo "Bibliographie de " . $auteur1 . "<br> ";
+$auteur1->affichierBibliographie();
+// echo "Bibliographie de " . $auteur1 . "<br> ";
 // echo $livre1 . "<br>" ;
 
 
@@ -41,5 +41,5 @@ echo "Bibliographie de " . $auteur1 . "<br> ";
 // echo $livre6 -> getAuteur()->getNom();
 
 
-var_dump($auteur1);
+// var_dump($auteur1);
 // var_dump($livre);
