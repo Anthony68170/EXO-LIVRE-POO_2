@@ -16,9 +16,9 @@ class Auteur{
 
     public function afficherBibliographie(){
         // le tableau de livres lié à auteur fait une boucle le tableau de livre avec foreach 
-        foreach ($arrayName = array(); as $key => $value) {
+        foreach ($this -> _livres as $value) {
             # code...
-            echo $_livre-> ;
+            echo $_livre->__toString($auteur);
         }
     }
     public function ajouterLivre($livre){ //1_DONNER OBJET LIVRE et 2__LIVRE A INJECTER DANS TABLEAU(de l'auteur)
@@ -33,7 +33,7 @@ class Auteur{
       public function getNom(){
         return $this->_nom;
       }
-      public function __toString(){
+      public function __toString(){ //TOSTRING RETOURNE PRENOM ET NOM par la function public
         return $this->_prenom . " " . $this->_nom;
         }
 
